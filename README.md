@@ -1,5 +1,3 @@
-# hyprland-dotfiles
-
 # Hyprland Starter Setup (Arch Linux + AMD CPU + NVIDIA GPU)
 
 Este é um repositório base para configurar o ambiente gráfico Hyprland do zero em um Arch Linux minimalista, ideal para usuários que desejam performance, estética minimalista e controle total sobre seu sistema.
