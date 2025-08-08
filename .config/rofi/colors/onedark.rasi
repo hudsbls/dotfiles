@@ -1,0 +1,17 @@
+/**
+ *
+ * Author : Aditya Shakya (adi1090x)
+ * Adaptado para Flexoki Dark + Waybar por huds
+ * 
+ * Colors
+ **/
+
+* {
+    background:     #282726;  /* base-950 — fundo principal */
+    background-alt: #1C1B1A;  /* base-900 — variação para itens alternados */
+    foreground:     #CECDC3;  /* base-200 — texto principal */
+    selected:       #4385BE;  /* blue-400 — item selecionado */
+    active:         #879A39;  /* green-400 — item ativo */
+    urgent:         #D14D41;  /* red-400 — item urgente */
+    border:         #6F6E69;  /* base-600 — bordas suaves (opcional) */
+}
