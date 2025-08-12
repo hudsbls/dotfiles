@@ -14,4 +14,4 @@ rofi/ — Launcher Rofi
 
 scripts/ — Scripts personalizados
 
-![cores do sistema](https://github.com/hudsbls/dotfiles/blob/main/colors_.jpeg?raw=true)
+![cores do sistema](<img width="1251" height="172" alt="image" src="https://github.com/user-attachments/assets/effca425-5473-4656-963d-ffb341b150cb" />)
