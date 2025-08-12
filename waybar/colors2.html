@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<title>Paleta Atualizada com Simulações de Código</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    background-color: #1d150b;
+    color: #fff9c1;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  body {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: minmax(0, 33vh) minmax(0, 33vh) auto;
+    height: 100vh;
+    width: 100vw;
+    gap: 0;
+  }
+
+  .color-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding-left: 1.5rem;
+    padding-bottom: 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    user-select: none;
+    text-transform: uppercase;
+  }
+  .top {
+    color: black;
+  }
+  .top.background {
+    color: white;
+  }
+  .bottom {
+    color: white;
+  }
+
+  /* Cores da primeira linha */
+  .color1 { background-color: #01582E; color: white; }
+  .color2 { background-color: #FF883F; color: black; }
+  .color3 { background-color: #3F65EC; color: white; }
+  .color4 { background-color: #E2338C; color: white; }
+
+  /* Cores da segunda linha */
+  .color5 { background-color: #CBE7F7; color: black; }
+  .color6 { background-color: #DAD5D2; color: black; }
+  .color7 { background-color: #25211E; }
+  .color8 { background-color: #191818; }
+
+  /* Blocos de código da terceira linha */
+  pre.code-block {
+    background-color: #191818;
+    color: #DAD5D2;
+    font-family: 'Source Code Pro', monospace;
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
+    overflow: auto;
+    white-space: pre-wrap;
+    box-sizing: border-box;
+    border: 1px solid #25211e;
+    border-radius: 4px;
+    margin: 0;
+  }
+
+  /* Cores estilo VSCode (aproximadas) */
+  .comment { color: #534d48; font-style: italic; }
+  .selector { color: #FF883F; font-weight: 700; }
+  .property { color: #E2338C; }
+  .value { color: #dad5d2; }
+  .punctuation { color: #01582E; }
+  .keyword { color: #CBE7F7; font-weight: 700; }
+  .tag { color: #FF883F; }
+  .attr-name { color: #E2338C; }
+  .attr-value { color: #3F65EC; }
+
+  /* CSS */
+  .code-css .selector { color: #FF883F; font-weight: 700; }
+  .code-css .property { color: #E2338C; }
+  .code-css .value { color: #dad5d2; }
+  .code-css .punctuation { color: #01582E; }
+  .code-css .keyword { color: #CBE7F7; font-weight: 700; }
+  .code-css .comment { color: #534d48; font-style: italic; }
+
+  /* JavaScript */
+  .code-js .keyword { color: #FF883F; font-weight: 700; }
+  .code-js .string { color: #dad5d2; }
+  .code-js .number { color: #E2338C; }
+  .code-js .function { color: #3F65EC; font-weight: 700; }
+  .code-js .comment { color: #534d48; font-style: italic; }
+  .code-js .variable { color: #E2338C; }
+
+  /* Python */
+  .code-py .keyword { color: #FF883F; font-weight: 700; }
+  .code-py .string { color: #dad5d2; }
+  .code-py .number { color: #E2338C; }
+  .code-py .function { color: #3F65EC; font-weight: 700; }
+  .code-py .comment { color: #534d48; font-style: italic; }
+  .code-py .variable { color: #E2338C; }
+
+</style>
+<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Linha 1: 4 cores -->
+  <div class="color-box top color1">#01582E</div>
+  <div class="color-box top color2">#FF883F</div>
+  <div class="color-box top color3">#3F65EC</div>
+  <div class="color-box top color4">#E2338C</div>
+
+  <!-- Linha 2: 4 cores -->
+  <div class="color-box bottom color5">#CBE7F7</div>
+  <div class="color-box bottom color6">#DAD5D2</div>
+  <div class="color-box bottom color7">#25211E</div>
+  <div class="color-box bottom color8">#191818</div>
+
+  <!-- Linha 3: 4 blocos de código lado a lado -->
+  <pre class="code-block code-css">
+<span class="comment">/* Tema VSCode simulado */</span>
+<span class="selector">.background</span><span class="punctuation"> {</span>
+  <br>  <span class="property">background-color</span><span class="punctuation">:</span> <span class="value">#01582E</span><span class="punctuation">;</span>
+  <br><span class="punctuation">}</span>
+  <br><span class="selector">.workspace</span><span class="punctuation"> {</span>
+  <br>  <span class="property">background-color</span><span class="punctuation">:</span> <span class="value">#FF883F</span><span class="punctuation">;</span>
+  <br><span class="punctuation">}</span>
+  <br><span class="selector">.hover-bg</span><span class="punctuation"> {</span>
+  <br>  <span class="property">background-color</span><span class="punctuation">:</span> <span class="value">#3F65EC</span><span class="punctuation">;</span>
+  <br><span class="punctuation">}</span>
+  <br><span class="selector">.text</span><span class="punctuation"> {</span>
+  <br>  <span class="property">background-color</span><span class="punctuation">:</span> <span class="value">#E2338C</span><span class="punctuation">;</span>
+  <br><span class="punctuation">}</span>
+  <br><span class="keyword">/* cores usadas */</span>
+  </pre>
+
+  <pre class="code-block html-code">
+<span class="comment">&lt;!-- Exemplo HTML --&gt;</span>
+<br><span class="tag">&lt;div</span> <span class="attr-name">class</span><span class="punctuation">=</span><span class="attr-value">"container"</span><span class="tag">&gt;</span>
+<br>  <span class="tag">&lt;h1&gt;</span>Título<span class="tag">&lt;/h1&gt;</span>
+<br>  <span class="tag">&lt;p&gt;</span>Parágrafo de texto.<span class="tag">&lt;/p&gt;</span>
+<br><span class="tag">&lt;/div&gt;</span>
+  </pre>
+
+  <pre class="code-block code-js">
+<span class="comment">// Exemplo JavaScript</span>
+<br><span class="keyword">function</span> <span class="function">saudar</span><span class="punctuation">(</span><span class="variable">nome</span><span class="punctuation">)</span> <span class="punctuation">{</span>
+  <br>  <span class="keyword">return</span> <span class="string">`Olá, ${</span><span class="variable">nome</span><span class="string">}!`</span><span class="punctuation">;</span>
+  <br><span class="punctuation">}</span>
+  <br><span class="keyword">const</span> <span class="variable">msg</span> <span class="punctuation">=</span> <span class="function">saudar</span><span class="punctuation">(</span><span class="string">'mundo'</span><span class="punctuation">)</span><span class="punctuation">;</span>
+  <br><span class="function">console</span><span class="punctuation">.</span><span class="function">log</span><span class="punctuation">(</span><span class="variable">msg</span><span class="punctuation">)</span><span class="punctuation">;</span>
+  </pre>
+
+  <pre class="code-block code-py">
+<span class="comment"># Exemplo Python</span>
+<br><span class="keyword">def</span> <span class="function">saudar</span><span class="punctuation">(</span><span class="variable">nome</span><span class="punctuation">):</span>
+  <br>    <span class="keyword">return</span> <span class="string">f"Olá, {</span><span class="variable">nome</span><span class="string">}!"</span>
+  <br><span class="keyword">msg</span> <span class="punctuation">=</span> <span class="function">saudar</span><span class="punctuation">(</span><span class="string">'mundo'</span><span class="punctuation">)</span>
+  <br><span class="function">print</span><span class="punctuation">(</span><span class="keyword">msg</span><span class="punctuation">)</span>
+  </pre>
+
+</body>
+</html>
