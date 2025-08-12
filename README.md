@@ -1,19 +1,18 @@
-# Hyprland Dotfiles 🎨
+# Hyprland Dotfiles 
 
 Configurações do hyprland no archlinux.
 
 **Estrutura** 📂
 
-hyprland.conf — ⚙️ Configuração principal do Hyprland
+hyprland.conf — Configuração principal do Hyprland
 
 waybar/ — Barra de status
 
-kitty/ — 🖥️ Terminal Kitty
+kitty/ — Terminal 
 
-rofi/ — 🚀 Launcher Rofi
+rofi/ — Launcher Rofi
 
-scripts/ — 📜 Scripts personalizados
+scripts/ — Scripts personalizados
 
-rofi/ — 🔍 Launcher 
 
 Requisitos 🛠️
