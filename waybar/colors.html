@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<title>Preview Paleta Texto Preto Inferior</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400&display=swap');
+
+  html, body {
+    margin: 0; 
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 400;
+    background-color: #1d150b;
+    color: #fff9c1;
+  }
+  body {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    height: 100vh;
+    width: 100vw;
+  }
+  .color-box {
+    flex: 1 1 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* texto na parte inferior */
+    align-items: center;
+    padding-bottom: 1.5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    user-select: none;
+    height: 100vh;
+    color: black; /* texto preto */
+  }
+  .background {
+    background-color: #1d150b;
+  }
+  .workspace {
+    background-color: #a4c639;
+  }
+  .hover-bg {
+    background-color: #cbe7f7;
+  }
+  .hover-text {
+    background-color: #fa4e00;
+  }
+  .text {
+    background-color: #fff9c1;
+  }
+</style>
+</head>
+<body>
+  <div class="color-box background">#1d150b<br>Fundo</div>
+  <div class="color-box workspace">#a4c639<br>Workspace</div>
+  <div class="color-box hover-bg">#cbe7f7<br>Hover BG</div>
+  <div class="color-box hover-text">#fa4e00<br>Hover Text</div>
+  <div class="color-box text">#fff9c1<br>Texto</div>
+</body>
+</html>

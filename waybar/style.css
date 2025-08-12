@@ -1,0 +1,98 @@
+/* Reset básico */
+* {
+  border: none;
+  border-radius: 0;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 13px;
+  min-height: 0;
+}
+
+/* Fundo geral */
+window#waybar {
+  background: #1d150b;
+  color: #fff9c1;
+}
+
+.modules-center{
+  margin: 0 0.4em; /* margem horizontal menor */
+}
+.modules-left {
+  margin-left: 0.8em; /* aumenta espaço na borda esquerda */
+  margin-right: 0.3em; /* mantém um pouco de espaço interna */
+}
+
+.modules-right {
+  margin-right: 0.8em; /* aumenta espaço na borda direita */
+  margin-left: 0.3em;  /* mantém espaço interna */
+}
+
+#custom-music,
+#clock,
+#network,
+#pulseaudio,
+#cpu,
+#memory,
+#tray,
+#custom-notification,
+#custom-power {
+  padding: 0 0.4em; /* padding horizontal menor */
+}
+
+#workspaces button {
+  padding: 0;
+  margin: 10px 0; 
+  color: #a4c639;
+  border-radius: 3px;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+#workspaces button.active {
+  background: #a4c639;
+  color: #1d150b;
+}
+
+
+/* Hover — outros módulos */
+#custom-music:hover,
+#clock:hover,
+#network:hover,
+#pulseaudio:hover,
+#cpu:hover,
+#memory:hover,
+#tray:hover,
+#custom-notification:hover,
+#custom-power:hover {
+  background: #cbe7f7;
+  color: #fa4e00;
+  margin: 10px 0; 
+
+  border-radius: 3px;
+}
+
+#workspaces button:hover {
+  background: #cbe7f7;
+  color: #fa4e00;
+}
+
+
+/* Tooltip */
+tooltip {
+  background: #1d150b;
+  color: #e0e0e0;
+  border: 0.0625em solid #a4c639;
+  border-radius: 0.25em;
+}
+#custom-music-prev,
+#custom-music-playpause,
+#custom-music-next {
+  padding: 0 0.4em;
+  font-size: 14px;
+  color: #a4c639;
+}
+#custom-prev:hover,
+#custom-next:hover {
+  color: #cbe7f7;
+  background: #a4c639;
+  border-radius: 0.25em;
+}
